@@ -6,7 +6,7 @@ const Invoice = require('../invoice/model');
 const orderSchema = Schema({
     status:{
         type:String,
-        enum:['waiting payment','processing','in_delivery','delivered'],
+        enum:['waiting_payment','processing','in_delivery','delivered'],
         default:'waiting_payment'
     },
     delivery_fee:{
