@@ -7,14 +7,14 @@ const orderItemSchema = Schema({
         minLength:[5,'panjang makanan min 50 karakter'],
         required:[true,'harus diisi']
     },
-    qty:{
-        type:Number,
-        min:[1,' min qty 1'],
-        required:[true,'harus diisi']
-    },
     price:{
         type:Number,
         default:[true,'harga item harus diisi']
+    },
+    qty:{
+        type:Number,
+        required:[true,'harus diisi'],
+        min:[1,' min qty 1']
     },
     product:{
         type:Schema.Types.ObjectId,
